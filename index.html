@@ -57,6 +57,18 @@
   .form-submit:hover{transform:translateY(-3px);background:#efffae;box-shadow:0 12px 30px #d5ff6322}
   .form-status{margin:12px 0 0;color:#c2d6a0;font-size:10px;line-height:1.6}
 
+
+  .faq-section{background:#111719;border-block:1px solid #ffffff0d}
+  .faq-layout{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px}
+  .faq-intro{align-self:start}
+  .faq-list{border-top:1px solid var(--line)}
+  .faq-list details{border-bottom:1px solid var(--line)}
+  .faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:18px;list-style:none;cursor:pointer;padding:22px 2px;font:500 16px 'Space Grotesk',sans-serif;letter-spacing:-.035em}
+  .faq-list summary::-webkit-details-marker{display:none}
+  .faq-list summary:after{content:'+';display:grid;place-items:center;flex:0 0 27px;height:27px;border:1px solid #ffffff25;border-radius:50%;color:var(--lime);font:400 18px 'DM Sans',sans-serif;transition:transform .25s,background .25s}
+  .faq-list details[open] summary:after{content:'−';transform:rotate(180deg);background:#d5ff6312}
+  .faq-answer{max-width:650px;padding:0 38px 22px 2px;color:#9da8a3;font-size:12px;line-height:1.9;animation:fadeup .25s ease}
+
   @media(max-width:980px){.hero{grid-template-columns:1fr 1fr;gap:12px}.hero-art{min-height:470px}.dashboard{width:min(100%,400px)}.orbit{width:310px;height:310px}.tag-left{left:-1%}.tag-right{right:-1%}.offer-grid{grid-template-columns:repeat(2,1fr)}.problem-grid{gap:35px}.process-layout{gap:45px}.cta-panel{padding:43px;grid-template-columns:1fr}.cta-action{flex-direction:row;align-items:center;flex-wrap:wrap}}
   @media(max-width:720px){.shell{width:min(var(--max),calc(100% - 36px))}.topbar{height:70px}.topbar.scrolled{height:64px}.menu-toggle{display:block}.nav{display:none;position:absolute;left:18px;right:18px;top:calc(100% - 1px);padding:17px;border:1px solid var(--line);border-radius:15px;background:#111719f7;backdrop-filter:blur(18px);flex-direction:column;align-items:stretch;gap:0;box-shadow:0 22px 42px #0008}.nav.open{display:flex}.nav>a:not(.nav-cta){padding:13px 8px;border-bottom:1px solid #ffffff0d}.nav>a:not(.nav-cta):after{display:none}.nav-cta{margin-top:12px;padding:14px}.hero{grid-template-columns:1fr;padding:58px 0 53px;gap:12px;min-height:auto}.hero-copy{padding:0}.hero h1{font-size:clamp(50px,12vw,77px)}.lede{font-size:14px}.hero-art{min-height:435px;margin-top:8px}.dashboard{max-width:430px}.orbit{width:310px;height:310px}.tag-left{left:0;bottom:10%}.tag-right{right:0;top:8%}.section{padding:78px 0}.problem{padding:75px 0}.problem-grid,.process-layout,.sample-grid{grid-template-columns:1fr;gap:24px}.problem-copy{padding-top:0}.problem .section-heading{max-width:510px}.problem-points{gap:9px}.problem-point{padding:14px}.offer-head,.process-head,.sample-head,.fit-head{display:block;margin-bottom:29px}.offer-head .section-lede,.process-head .section-lede,.sample-head .section-lede,.fit-head .section-lede{margin-top:15px}.offer-grid{gap:9px}.offer-card{padding:19px;min-height:235px}.card-icon{margin:22px 0 17px}.offer-card h3{font-size:15px}.process-intro{position:static}.process-layout{gap:32px}.step{grid-template-columns:62px 1fr;gap:12px;padding:22px 0}.step h3{font-size:19px}.brief{padding:23px}.brief h3{margin-top:29px}.fit-grid{grid-template-columns:1fr}.cta{padding-bottom:58px}.cta-panel{padding:30px 24px;gap:25px}.cta-panel h2{font-size:clamp(36px,9vw,50px)}.cta-action{align-items:flex-start;flex-direction:column}footer{align-items:flex-start;flex-direction:column;gap:17px}.footer-links{gap:14px!important}}
   @media(max-width:390px){.shell{width:calc(100% - 28px)}.brand{font-size:12px}.hero h1{font-size:48px}.hero-art{min-height:400px}.dash-body{padding:18px 14px}.dash-foot{padding:11px 14px}.float-tag{padding:8px 10px}.tag-left{left:-2%}.tag-right{right:-2%}.offer-grid{grid-template-columns:1fr}.offer-card{min-height:205px}.problem-points{grid-template-columns:1fr}.cta-panel{padding:27px 20px}}
@@ -73,6 +85,46 @@
         "name": "Outbound Partner",
         "description": "Targeted outbound campaigns and B2B prospect research for ecommerce agencies.",
         "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://hafizhamzayaqoob004-ctrl.github.io/Portfolio/#faq",
+        "url": "https://hafizhamzayaqoob004-ctrl.github.io/Portfolio/#faq",
+        "name": "Outbound lead generation for ecommerce agencies — FAQs",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is targeted outbound for an ecommerce agency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It is a research-led way to identify ecommerce brands that fit an agency's services, find relevant decision-makers, and contact them with a clear, personalized reason to talk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which ecommerce agencies can you help?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Agencies offering Shopify development, ecommerce design, conversion rate optimization, paid media, creative, email marketing, or retention can be a fit when their ideal client and offer are clearly defined."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you guarantee meetings or new revenue?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No honest outbound service can guarantee a specific number of meetings or revenue for every campaign. Results depend on the offer, market, targeting, deliverability, timing, and prospect response."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What do you need before starting?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Start with the agency's core service, examples of the brands it helps best, target markets, differentiators, and existing prospecting tools or outreach."
+            }
+          }
+        ]
       },
       {
         "@type": "Service",
@@ -180,6 +232,17 @@
           <article class="fit-card reveal"><h3 class="fit-title"><span class="fit-icon">✓</span> A good fit if…</h3><div class="fit-list"><div class="fit-item"><b>↗</b><span>You help ecommerce brands with Shopify development, CRO, paid media, creative, or retention.</span></div><div class="fit-item"><b>↗</b><span>You can explain who gets the most value from your agency and why.</span></div><div class="fit-item"><b>↗</b><span>You want more relevant conversations—not random volume or spray-and-pray outreach.</span></div></div></article>
           <article class="fit-card avoid reveal delay-1"><h3 class="fit-title"><span class="fit-icon">—</span> Probably not a fit if…</h3><div class="fit-list"><div class="fit-item"><b>×</b><span>You expect guaranteed meetings, revenue, or overnight results.</span></div><div class="fit-item"><b>×</b><span>You want to blast huge lists without regard for relevance or sender reputation.</span></div><div class="fit-item"><b>×</b><span>You aren’t ready to clarify your offer or learn from campaign feedback.</span></div></div></article>
         </div><p class="fit-bottom">A practical, transparent process—without fake guarantees or inflated performance claims.</p>
+      </div>
+    </section>
+    <section class="section faq-section" id="faq">
+      <div class="shell faq-layout">
+        <div class="faq-intro reveal"><p class="section-kicker mono"><b></b> QUICK ANSWERS</p><h2 class="section-heading">Before we <em>get started.</em></h2><p class="section-lede">A few practical answers about outbound lead generation for ecommerce agencies.</p></div>
+        <div class="faq-list reveal delay-1">
+          <details><summary>What is targeted outbound for an ecommerce agency?</summary><div class="faq-answer">It is a research-led way to identify ecommerce brands that fit your services, find relevant decision-makers, and contact them with a clear, personalized reason to talk. The goal is to start relevant sales conversations—not send bulk, generic messages.</div></details>
+          <details><summary>Which ecommerce agencies can you help?</summary><div class="faq-answer">Agencies offering Shopify development, ecommerce design, conversion rate optimization, paid media, creative, email marketing, or retention can be a fit when their ideal client and offer are clearly defined.</div></details>
+          <details><summary>Can you guarantee meetings or new revenue?</summary><div class="faq-answer">No honest outbound service can guarantee a specific number of meetings or revenue for every campaign. Results depend on the offer, market, targeting, deliverability, timing, and prospect response. The process focuses on relevant targeting, careful messaging, and learning from campaign feedback.</div></details>
+          <details><summary>What do you need before starting?</summary><div class="faq-answer">Start with your agency’s core service, examples of the brands you help best, target markets, differentiators, and any existing prospecting tools or outreach. From there, the audience and campaign scope can be defined together.</div></details>
+        </div>
       </div>
     </section>
     <section class="shell cta" id="contact">
