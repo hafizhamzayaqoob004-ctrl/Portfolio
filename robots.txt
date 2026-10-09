@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hafizhamzayaqoob004-ctrl.github.io/Portfolio/sitemap.xml
